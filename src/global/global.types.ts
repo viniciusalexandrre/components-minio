@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import React from "react";
+import React from 'react';
 
 export interface ButtonThemeProps {
   border: string;
@@ -339,8 +339,8 @@ export interface ThemeDefinitionProps {
   logoColor: string;
   logoLabelColor: string;
   logoLabelInverse: string;
-  logoContrast: string;
-  logoContrastInverse: string;
+  logoContrast?: string;
+  logoContrastInverse?: string;
   loaderColor: string;
   linkColor?: string;
   boxBackground: string;
