@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 export interface ButtonThemeProps {
     border: string;
     text: string;
@@ -286,8 +286,8 @@ export interface ThemeDefinitionProps {
     logoColor: string;
     logoLabelColor: string;
     logoLabelInverse: string;
-    logoContrast?: string;
-    logoContrastInverse?: string;
+    logoContrast: string;
+    logoContrastInverse: string;
     loaderColor: string;
     linkColor?: string;
     boxBackground: string;

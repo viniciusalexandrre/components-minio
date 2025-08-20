@@ -292,8 +292,8 @@ interface ThemeDefinitionProps {
     logoColor: string;
     logoLabelColor: string;
     logoLabelInverse: string;
-    logoContrast?: string;
-    logoContrastInverse?: string;
+    logoContrast: string;
+    logoContrastInverse: string;
     loaderColor: string;
     linkColor?: string;
     boxBackground: string;
@@ -386,8 +386,8 @@ interface ConstructProps {
 declare const Button: FC<ButtonProps & React$1.ButtonHTMLAttributes<HTMLButtonElement>>;
 
 interface ApplicationLogoProps {
-    applicationName: "console" | "operator" | "directpv" | "kes" | "subnet" | "subnetops" | "cloud" | "releases" | "vmbroker" | "eureka" | "kms" | "loadbalancer" | "index" | "cache" | "monitor" | "observe" | "missioncontrol" | "globalconsole" | "minio" | "enterprise" | "aistor";
-    subVariant?: "simple" | "AGPL" | "standard" | "enterprise" | "new" | "enterpriseos" | "enterpriseosvertical" | "horizontal";
+    applicationName: 'console' | 'operator' | 'directpv' | 'kes' | 'subnet' | 'subnetops' | 'cloud' | 'releases' | 'vmbroker' | 'eureka' | 'kms' | 'loadbalancer' | 'index' | 'cache' | 'monitor' | 'observe' | 'missioncontrol' | 'globalconsole' | 'minio' | 'enterprise' | 'altatech' | 'aistor';
+    subVariant?: 'simple' | 'AGPL' | 'standard' | 'enterprise' | 'new' | 'enterpriseos' | 'enterpriseosvertical' | 'horizontal';
     inverse?: boolean;
     onClick?: React$1.MouseEventHandler<any> | undefined;
 }
