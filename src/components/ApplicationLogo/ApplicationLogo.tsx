@@ -14,125 +14,125 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import React, { FC } from "react";
-import { ApplicationLogoProps } from "./ApplicationLogo.types";
-import ConsoleStandard from "./Logos/Console/ConsoleStandard";
-import ConsoleAGPL from "./Logos/Console/ConsoleAGPL";
-import ConsoleEnterprise from "./Logos/Console/ConsoleEnterprise";
-import Operator from "./Logos/Operator/Operator";
-import DirectPV from "./Logos/DirectPV/DirectPV";
-import KES from "./Logos/KES/KES";
-import SUBNET from "./Logos/SUBNET/SUBNET";
-import ConsoleSingle from "./Logos/Console/ConsoleSingle";
-import SubnetOPS from "./Logos/SubnetOPS/SubnetOPS";
-import Cloud from "./Logos/Cloud/Cloud";
-import Releases from "./Logos/Releases/Releases";
-import VMBroker from "./Logos/VMBroker/VMBroker";
-import EurekaNew from "./Logos/Eureka/EurekaNew";
-import Eureka from "./Logos/Eureka/Eureka";
-import KMS from "./Logos/KMS/KMS";
-import LoadBalancer from "./Logos/LoadBalancer/LoadBalancer";
-import IndexLogo from "./Logos/IndexLogo/IndexLogo";
-import Cache from "./Logos/Cache/Cache";
-import Monitor from "./Logos/Monitor/Monitor";
-import Observe from "./Logos/Observe/Observe";
-import MissionControl from "./Logos/MissionControl/MissionControl";
-import GlobalConsole from "./Logos/Console/GlobalConsole";
-import ThemedLogo from "../ThemedLogo/ThemedLogo";
-import Enterprise from "./Logos/Enterprise/Enterprise";
-import MinIOEnterprise from "./Logos/MinIO/MinIOEnterprise";
-import MinIOEnterpriseOS from "./Logos/MinIO/MinIOEnterpriseOS";
-import MinIOEnterpriseOSVertical from "./Logos/MinIO/MinIOEnterpriseOSVertical";
-import AIStor from "./Logos/AIStor/AIStor";
-import AIStorHorizontal from "./Logos/AIStor/AIStorHorizontal";
-import AIStorTag from "./Logos/AIStor/AIStorTag";
+import React, { FC } from 'react';
+import { ApplicationLogoProps } from './ApplicationLogo.types';
+import ConsoleStandard from './Logos/Console/ConsoleStandard';
+import ConsoleAGPL from './Logos/Console/ConsoleAGPL';
+import ConsoleEnterprise from './Logos/Console/ConsoleEnterprise';
+import Operator from './Logos/Operator/Operator';
+import DirectPV from './Logos/DirectPV/DirectPV';
+import KES from './Logos/KES/KES';
+import SUBNET from './Logos/SUBNET/SUBNET';
+import ConsoleSingle from './Logos/Console/ConsoleSingle';
+import SubnetOPS from './Logos/SubnetOPS/SubnetOPS';
+import Cloud from './Logos/Cloud/Cloud';
+import Releases from './Logos/Releases/Releases';
+import VMBroker from './Logos/VMBroker/VMBroker';
+import EurekaNew from './Logos/Eureka/EurekaNew';
+import Eureka from './Logos/Eureka/Eureka';
+import KMS from './Logos/KMS/KMS';
+import LoadBalancer from './Logos/LoadBalancer/LoadBalancer';
+import IndexLogo from './Logos/IndexLogo/IndexLogo';
+import Cache from './Logos/Cache/Cache';
+import Monitor from './Logos/Monitor/Monitor';
+import Observe from './Logos/Observe/Observe';
+import MissionControl from './Logos/MissionControl/MissionControl';
+import GlobalConsole from './Logos/Console/GlobalConsole';
+import ThemedLogo from '../ThemedLogo/ThemedLogo';
+import Enterprise from './Logos/Enterprise/Enterprise';
+import MinIOEnterprise from './Logos/MinIO/MinIOEnterprise';
+import MinIOEnterpriseOS from './Logos/MinIO/MinIOEnterpriseOS';
+import MinIOEnterpriseOSVertical from './Logos/MinIO/MinIOEnterpriseOSVertical';
+import AIStor from './Logos/AIStor/AIStor';
+import AIStorHorizontal from './Logos/AIStor/AIStorHorizontal';
+import AIStorTag from './Logos/AIStor/AIStorTag';
 
 const ApplicationLogo: FC<ApplicationLogoProps> = ({
   applicationName,
-  subVariant = "simple",
+  subVariant = 'simple',
   inverse,
   onClick,
 }) => {
   switch (applicationName) {
-    case "console":
+    case 'console':
       switch (subVariant) {
-        case "standard":
+        case 'standard':
           return <ConsoleStandard inverse={!!inverse} onClick={onClick} />;
-        case "enterprise":
+        case 'enterprise':
           return <ConsoleEnterprise inverse={!!inverse} onClick={onClick} />;
-        case "AGPL":
+        case 'AGPL':
           return <ConsoleAGPL inverse={!!inverse} onClick={onClick} />;
         default:
           return <ConsoleSingle inverse={!!inverse} onClick={onClick} />;
       }
       break;
-    case "directpv":
+    case 'directpv':
       return <DirectPV inverse={!!inverse} onClick={onClick} />;
-    case "subnet":
+    case 'subnet':
       return <SUBNET inverse={!!inverse} onClick={onClick} />;
-    case "kes":
+    case 'kes':
       return <KES inverse={!!inverse} onClick={onClick} />;
-    case "operator":
+    case 'operator':
       return <Operator inverse={!!inverse} onClick={onClick} />;
-    case "subnetops":
+    case 'subnetops':
       return <SubnetOPS inverse={!!inverse} onClick={onClick} />;
-    case "cloud":
+    case 'cloud':
       return <Cloud inverse={!!inverse} onClick={onClick} />;
-    case "releases":
+    case 'releases':
       return <Releases inverse={!!inverse} onClick={onClick} />;
       break;
-    case "vmbroker":
+    case 'vmbroker':
       return <VMBroker inverse={!!inverse} onClick={onClick} />;
       break;
-    case "eureka":
+    case 'eureka':
       switch (subVariant) {
-        case "new":
+        case 'new':
           return <EurekaNew inverse={!!inverse} onClick={onClick} />;
         default:
           return <Eureka inverse={!!inverse} onClick={onClick} />;
       }
       break;
-    case "kms":
+    case 'kms':
       return <KMS inverse={!!inverse} onClick={onClick} />;
-    case "loadbalancer":
+    case 'loadbalancer':
       return <LoadBalancer inverse={!!inverse} onClick={onClick} />;
-    case "index":
+    case 'index':
       return <IndexLogo inverse={!!inverse} onClick={onClick} />;
-    case "cache":
+    case 'cache':
       return <Cache inverse={!!inverse} onClick={onClick} />;
-    case "monitor":
+    case 'monitor':
       return <Monitor inverse={!!inverse} onClick={onClick} />;
-    case "observe":
+    case 'observe':
       return <Observe inverse={!!inverse} onClick={onClick} />;
-    case "missioncontrol":
+    case 'missioncontrol':
       return <MissionControl inverse={!!inverse} onClick={onClick} />;
-    case "globalconsole":
+    case 'globalconsole':
       return <GlobalConsole inverse={!!inverse} onClick={onClick} />;
-    case "enterprise":
+    case 'enterprise':
       return <Enterprise inverse={!!inverse} onClick={onClick} />;
-    case "aistor":
+    case 'aistor':
       switch (subVariant) {
-        case "simple":
+        case 'simple':
           return <AIStor inverse={!!inverse} onClick={onClick} />;
           break;
-        case "horizontal":
+        case 'horizontal':
           return <AIStorHorizontal inverse={!!inverse} onClick={onClick} />;
         default:
           return <AIStorTag inverse={!!inverse} onClick={onClick} />;
       }
-    case "minio":
+    case 'minio':
       switch (subVariant) {
-        case "enterprise":
+        case 'enterprise':
           return <MinIOEnterprise inverse={!!inverse} onClick={onClick} />;
           break;
-        case "enterpriseos":
+        case 'enterpriseos':
           return <MinIOEnterpriseOS inverse={!!inverse} onClick={onClick} />;
-        case "enterpriseosvertical":
+        case 'enterpriseosvertical':
           return (
             <MinIOEnterpriseOSVertical inverse={!!inverse} onClick={onClick} />
           );
         default:
-          return <ThemedLogo onClick={onClick} />;
+          return <MinIOEnterprise onClick={onClick} />;
       }
   }
 };
