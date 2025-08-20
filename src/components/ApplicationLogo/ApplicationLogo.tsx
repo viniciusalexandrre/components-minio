@@ -123,29 +123,13 @@ const ApplicationLogo: FC<ApplicationLogoProps> = ({
     case 'minio':
       switch (subVariant) {
         case 'enterprise':
-          return (
-            <MinIOEnterprise
-              inverse={!!inverse}
-              height={10}
-              onClick={onClick}
-            />
-          );
+          return <MinIOEnterprise inverse={!!inverse} onClick={onClick} />;
           break;
         case 'enterpriseos':
-          return (
-            <MinIOEnterpriseOS
-              inverse={!!inverse}
-              onClick={onClick}
-              height={10}
-            />
-          );
+          return <MinIOEnterpriseOS inverse={!!inverse} onClick={onClick} />;
         case 'enterpriseosvertical':
           return (
-            <MinIOEnterpriseOSVertical
-              inverse={!!inverse}
-              onClick={onClick}
-              height={10}
-            />
+            <MinIOEnterpriseOSVertical inverse={!!inverse} onClick={onClick} />
           );
         default:
           return <MinIOEnterpriseOS onClick={onClick} />;
