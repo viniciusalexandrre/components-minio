@@ -14,40 +14,41 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import React from "react";
+import React from 'react';
 
 export interface ApplicationLogoProps {
   applicationName:
-    | "console"
-    | "operator"
-    | "directpv"
-    | "kes"
-    | "subnet"
-    | "subnetops"
-    | "cloud"
-    | "releases"
-    | "vmbroker"
-    | "eureka"
-    | "kms"
-    | "loadbalancer"
-    | "index"
-    | "cache"
-    | "monitor"
-    | "observe"
-    | "missioncontrol"
-    | "globalconsole"
-    | "minio"
-    | "enterprise"
-    | "aistor";
+    | 'console'
+    | 'operator'
+    | 'directpv'
+    | 'kes'
+    | 'subnet'
+    | 'subnetops'
+    | 'cloud'
+    | 'releases'
+    | 'vmbroker'
+    | 'eureka'
+    | 'kms'
+    | 'loadbalancer'
+    | 'index'
+    | 'cache'
+    | 'monitor'
+    | 'observe'
+    | 'missioncontrol'
+    | 'globalconsole'
+    | 'minio'
+    | 'enterprise'
+    | 'altatech'
+    | 'aistor';
   subVariant?:
-    | "simple"
-    | "AGPL"
-    | "standard"
-    | "enterprise"
-    | "new"
-    | "enterpriseos"
-    | "enterpriseosvertical"
-    | "horizontal";
+    | 'simple'
+    | 'AGPL'
+    | 'standard'
+    | 'enterprise'
+    | 'new'
+    | 'enterpriseos'
+    | 'enterpriseosvertical'
+    | 'horizontal';
   inverse?: boolean;
   onClick?: React.MouseEventHandler<any> | undefined;
 }

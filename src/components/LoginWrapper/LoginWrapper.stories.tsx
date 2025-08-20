@@ -14,16 +14,16 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import React, { Fragment } from "react";
-import { Meta, Story } from "@storybook/react-webpack5";
+import React, { Fragment } from 'react';
+import { Meta, Story } from '@storybook/react-webpack5';
 
-import LoginWrapper from "./LoginWrapper";
-import { LoginWrapperProps } from "./LoginWrapper.types";
-import StoryThemeProvider from "../../utils/StoryThemeProvider";
-import { Button, GlobalStyles } from "../index";
+import LoginWrapper from './LoginWrapper';
+import { LoginWrapperProps } from './LoginWrapper.types';
+import StoryThemeProvider from '../../utils/StoryThemeProvider';
+import { Button, GlobalStyles } from '../index';
 
 export default {
-  title: "MDS/FullPage/LoginWrapper",
+  title: 'MDS/FullPage/LoginWrapper',
   component: LoginWrapper,
   argTypes: {},
 } as Meta<typeof LoginWrapper>;
@@ -38,13 +38,13 @@ const Template: Story<LoginWrapperProps> = (args) => (
 export const Default = Template.bind({});
 
 const demoInputStyles = {
-  width: "100%",
-  backgroundColor: "transparent",
-  border: "#00000020 1px solid",
-  borderRadius: "3px",
-  height: "30px",
-  marginBottom: "20px",
-  padding: "5px",
+  width: '100%',
+  backgroundColor: 'transparent',
+  border: '#00000020 1px solid',
+  borderRadius: '3px',
+  height: '30px',
+  marginBottom: '20px',
+  padding: '5px',
 };
 
 Default.args = {
@@ -55,37 +55,37 @@ Default.args = {
       Native to Kubernetes, MinIO is the only object storage suite available on
       every public cloud, every Kubernetes distribution, the private cloud and
       the edge. MinIO is software-defined and is 100% open source under GNU AGPL
-      v3. <a href={"#"}>link</a>
+      v3. <a href={'#'}>link</a>
     </Fragment>
   ),
   logoProps: {
-    applicationName: "console",
-    subVariant: "AGPL",
+    applicationName: 'minio',
+    subVariant: 'enterprise',
   },
   form: (
     <Fragment>
       DEMO FORM
-      <input name={"testInput"} style={demoInputStyles} placeholder="User" />
+      <input name={'testInput'} style={demoInputStyles} placeholder="User" />
       <br />
       <input
-        name={"testInput"}
-        type={"password"}
+        name={'testInput'}
+        type={'password'}
         style={demoInputStyles}
         placeholder="Password"
       />
       <br />
       <Button
-        id={"submit"}
-        type={"button"}
-        label={"Login"}
-        variant={"callAction"}
+        id={'submit'}
+        type={'button'}
+        label={'Login'}
+        variant={'callAction'}
         fullWidth
       />
     </Fragment>
   ),
   formFooter: (
     <Fragment>
-      Documentation│<a href={"#"}>GitHub</a>│Support│Download
+      Documentation│<a href={'#'}>GitHub</a>│Support│Download
     </Fragment>
   ),
 };

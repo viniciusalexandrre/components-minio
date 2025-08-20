@@ -14,17 +14,17 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import React from "react";
-import { Meta, Story } from "@storybook/react-webpack5";
+import React from 'react';
+import { Meta, Story } from '@storybook/react-webpack5';
 
-import ApplicationLogo from "./ApplicationLogo";
-import { ApplicationLogoProps } from "./ApplicationLogo.types";
+import ApplicationLogo from './ApplicationLogo';
+import { ApplicationLogoProps } from './ApplicationLogo.types';
 
-import StoryThemeProvider from "../../utils/StoryThemeProvider";
-import GlobalStyles from "../GlobalStyles/GlobalStyles";
+import StoryThemeProvider from '../../utils/StoryThemeProvider';
+import GlobalStyles from '../GlobalStyles/GlobalStyles';
 
 export default {
-  title: "MDS/Graphics/ApplicationLogo",
+  title: 'MDS/Graphics/ApplicationLogo',
   component: ApplicationLogo,
   argTypes: {},
 } as Meta<typeof ApplicationLogo>;
@@ -32,7 +32,7 @@ export default {
 const Template: Story<ApplicationLogoProps> = (args) => (
   <StoryThemeProvider>
     <GlobalStyles />
-    <div style={{ maxWidth: "200px" }}>
+    <div style={{ maxWidth: '200px', backgroundColor: 'red' }}>
       <ApplicationLogo {...args} />
     </div>
   </StoryThemeProvider>
@@ -40,5 +40,5 @@ const Template: Story<ApplicationLogoProps> = (args) => (
 
 export const Default = Template.bind({});
 Default.args = {
-  applicationName: "console",
+  applicationName: 'minio',
 };
