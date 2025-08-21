@@ -103,6 +103,9 @@ const CustomLogin = styled.div(({ theme }) => {
           // textShadow: '0 0 5ppx #000',
           '& img': {
             width: '900px',
+            '@media (max-width: 1100px)': {
+              width: '500px',
+            },
           },
           '& a': {
             color: get(theme, 'login.promoText', '#fff'),
