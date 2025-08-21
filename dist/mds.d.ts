@@ -298,6 +298,8 @@ interface ThemeDefinitionProps {
   logoColor: string;
   logoLabelColor: string;
   logoLabelInverse: string;
+  logoContrast: string;
+  logoContrastInverse: string;
   loaderColor: string;
   linkColor?: string;
   boxBackground: string;
@@ -332,7 +334,7 @@ interface ThemeDefinitionProps {
   codeEditor?: CodeEditorThemeProps;
   tag?: TagThemeProps;
   snackbar?: SnackBarThemeProps;
-  informativeMessage?: InformativeMessageProps;
+  informativeMessage?: InformativeMessageProps$1;
   badge?: BadgeStyleProps;
   wizard?: WizardColorProps;
   slider?: SliderProps;

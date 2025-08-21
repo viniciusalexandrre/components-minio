@@ -16,6 +16,7 @@
 
 import React, { Fragment } from 'react';
 import { Meta, Story } from '@storybook/react-webpack5';
+import image from '../../Logo_Object_Storage.svg';
 
 import LoginWrapper from './LoginWrapper';
 import { LoginWrapperProps } from './LoginWrapper.types';
@@ -47,15 +48,25 @@ const demoInputStyles = {
   padding: '5px',
 };
 
+const imageStyles = {
+  width: '100%',
+  maxWidth: '600px',
+};
+
 Default.args = {
   promoHeader: <Fragment>Multi-Cloud Object&nbsp;Store</Fragment>,
   promoInfo: (
+    // <Fragment>
+    //   MinIO offers high-performance, S3 compatible object storage. <br />
+    //   Native to Kubernetes, MinIO is the only object storage suite available on
+    //   every public cloud, every Kubernetes distribution, the private cloud and
+    //   the edge. MinIO is software-defined and is 100% open source under GNU AGPL
+    //   v3. <a href={'#'}>link</a>
+    // </Fragment>
     <Fragment>
-      MinIO offers high-performance, S3 compatible object storage. <br />
-      Native to Kubernetes, MinIO is the only object storage suite available on
-      every public cloud, every Kubernetes distribution, the private cloud and
-      the edge. MinIO is software-defined and is 100% open source under GNU AGPL
-      v3. <a href={'#'}>link</a>
+      <div>
+        <img src={image} />
+      </div>
     </Fragment>
   ),
   logoProps: {

@@ -74,13 +74,17 @@ const CustomLogin = styled.div(({ theme }) => {
         left: 0,
       },
       '& .promoContainer': {
-        zIndex: 100,
-        width: '80%',
-        maxWidth: '687px',
-        position: 'absolute',
-        top: '190px',
-        left: '50%',
-        transform: 'translateX(-50%)',
+        // zIndex: 100,
+        // width: '80%',
+        // maxWidth: '687px',
+        // position: 'absolute',
+        // top: '190px',
+        // left: '50%',
+        // transform: 'translateX(-50%)',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '100%',
         '& .promoHeader': {
           color: get(theme, 'login.promoHeader', '#fff'),
           fontSize: '46px',
@@ -89,14 +93,17 @@ const CustomLogin = styled.div(({ theme }) => {
           lineHeight: '60px',
         },
         '& .promoInfo': {
-          marginTop: '31px',
-          maxWidth: '542px',
-          color: get(theme, 'login.promoText', '#fff'),
-          fontSize: '18px',
-          textAlign: 'left',
-          fontWeight: '300',
-          lineHeight: '30px',
-          textShadow: '0 0 5ppx #000',
+          // marginTop: '31px',
+          // maxWidth: '542px',
+          // color: get(theme, 'login.promoText', '#fff'),
+          // fontSize: '18px',
+          // textAlign: 'left',
+          // fontWeight: '300',
+          // lineHeight: '30px',
+          // textShadow: '0 0 5ppx #000',
+          '& img': {
+            width: '900px',
+          },
           '& a': {
             color: get(theme, 'login.promoText', '#fff'),
             textDecoration: 'none',
@@ -187,16 +194,16 @@ const LoginWrapper: FC<LoginWrapperProps> = ({
       <Grid container className={'mainContainer'} wrap={'nowrap'}>
         <Grid item xs={'hidden'} sm={'hidden'} md className={'decorationPanel'}>
           {(promoInfo || promoHeader) && (
-            <Grid container>
-              <Grid item className={'promoContainer'}>
-                <Grid item className={'promoHeader'}>
+            // <Grid container>
+            <Grid item className={'promoContainer'}>
+              {/* <Grid item className={'promoHeader'}>
                   {promoHeader}
-                </Grid>
-                <Grid item className={'promoInfo'}>
-                  {promoInfo}
-                </Grid>
+                </Grid> */}
+              <Grid item className={'promoInfo'}>
+                {promoInfo}
               </Grid>
             </Grid>
+            // </Grid>
           )}
           {/* <Grid item className={"videoContainer"}>
             {GPUAvailable && backgroundAnimation ? (
