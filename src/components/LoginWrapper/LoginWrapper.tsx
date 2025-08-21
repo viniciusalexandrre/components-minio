@@ -274,7 +274,7 @@ const CustomLogin = styled.div(({ theme }) => {
     },
     '& .decorationPanel': {
       position: 'relative',
-      backgroundColor: get(theme, 'login.promoBG', '#000110'),
+      backgroundColor: '#6184eb',
       height: '100%',
       display: 'grid',
       alignItems: 'center',
@@ -300,12 +300,11 @@ const CustomLogin = styled.div(({ theme }) => {
       borderRadius: '0px 20px 20px 0px',
       height: '100%',
       padding: '60px',
-      '& .titleContainer': {
-        '& h1': {
-          color: get(theme, '#fff', 'login.formBG'),
-          marginTop: '0px',
-          marginBottom: '0px',
-        },
+      border: '1px solid #e7ecff',
+      '& .title': {
+        color: get(theme, '#fff', 'login.formBG'),
+        marginTop: '0px',
+        marginBottom: '0px',
       },
       '& .formContainer': {
         paddingTop: '40px',
@@ -362,6 +361,7 @@ const LoginWrapper: FC<LoginWrapperProps> = ({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
+        backgroundColor: '#f6f9ff',
       }}
     >
       <Grid container className={'mainContainer'} wrap={'nowrap'}>
@@ -376,8 +376,8 @@ const LoginWrapper: FC<LoginWrapperProps> = ({
         </Grid>
         <Grid item xs={12} className={'formPanel'}>
           <Grid container>
-            <Grid item xs={12} className={'titleContainer'}>
-              <h1>Login</h1>
+            <Grid item xs={12}>
+              <h1 className={'title'}>Login</h1>
             </Grid>
             <Grid item xs={12} className={'formContainer'}>
               <Grid item xs className={'form'}>
