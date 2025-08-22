@@ -302,7 +302,7 @@ const CustomLogin = styled.div(({ theme }) => {
       padding: '60px',
       border: '1px solid #e7ecff',
       '& .title': {
-        color: get(theme, '#fff', 'login.formBG'),
+        color: 'rgb(133, 179, 238)',
         marginTop: '0px',
         marginBottom: '0px',
       },
@@ -310,7 +310,7 @@ const CustomLogin = styled.div(({ theme }) => {
         paddingTop: '40px',
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'center',
+        // alignItems: 'center',
         '& .form': {
           '& form': {
             width: '100%',
@@ -318,16 +318,16 @@ const CustomLogin = styled.div(({ theme }) => {
         },
         '& .footer': {
           display: 'flex',
-          width: '328px',
-          textAlign: 'center',
-          alignItems: 'flex-end',
-          justifyContent: 'center',
+          justifyContent: 'space-between',
+
+          '& a': {
+            marginTop: '30px',
+          },
         },
         '& .footer, & .footer a': {
           color: get(theme, 'login.footerElements', '#000'),
           fontSize: '14px',
           textDecoration: 'none',
-          marginTop: '30px',
         },
       },
     },
