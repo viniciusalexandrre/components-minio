@@ -265,12 +265,16 @@ const CustomLogin = styled.div(({ theme }) => {
       justifyContent: 'center',
     },
     '& .mainContainer': {
-      padding: '20px',
       display: 'grid',
       gridTemplateColumns: '1fr 1fr',
       width: '100%',
       maxWidth: '1208px',
       alignItems: 'center',
+
+      '@media (max-width: 1100px)': {
+        padding: '20px',
+        gridTemplateColumns: '1fr',
+      },
     },
     '& .decorationPanel': {
       position: 'relative',
@@ -279,6 +283,12 @@ const CustomLogin = styled.div(({ theme }) => {
       display: 'grid',
       alignItems: 'center',
       borderRadius: '20px 0px 0px 20px',
+      width: '100%',
+      maxWidth: '608px',
+
+      '@media (max-width: 800px)': {
+        display: 'none',
+      },
       '& .promoContainer': {
         '& .promoInfo': {
           padding: '30px',
@@ -298,7 +308,6 @@ const CustomLogin = styled.div(({ theme }) => {
         maxWidth: '100%',
       },
       borderRadius: '0px 20px 20px 0px',
-      height: '100%',
       padding: '60px',
       border: '1px solid #e7ecff',
       '& .title': {
