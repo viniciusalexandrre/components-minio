@@ -319,7 +319,7 @@ const CustomLogin = styled.div(({ theme }) => {
         paddingTop: '40px',
         display: 'flex',
         flexDirection: 'column',
-        // alignItems: 'center',
+        alignItems: 'center',
         '& .form': {
           '& form': {
             width: '100%',
