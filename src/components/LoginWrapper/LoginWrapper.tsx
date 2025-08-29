@@ -293,7 +293,7 @@ const CustomLogin = styled.div(({ theme }) => {
         '& .promoInfo': {
           padding: '30px',
           '& img': {
-            width: '584px',
+            width: '508px',
           },
         },
       },
