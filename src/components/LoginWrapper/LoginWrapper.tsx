@@ -278,7 +278,7 @@ const CustomLogin = styled.div(({ theme }) => {
     },
     '& .decorationPanel': {
       position: 'relative',
-      backgroundColor: '#01AB6A',
+      backgroundColor: '#001951',
       height: '100%',
       display: 'grid',
       alignItems: 'center',
