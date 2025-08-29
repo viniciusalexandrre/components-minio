@@ -242,7 +242,7 @@
 
 // export default LoginWrapper;
 
-// Novo arquivo
+// Novo arquivo do cliente
 
 import React, { FC, useEffect, useState } from 'react';
 import get from 'lodash/get';
